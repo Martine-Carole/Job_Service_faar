@@ -21,3 +21,4 @@ class JobPost(db.Model):
             'skills': self.skills,
             'employer_id': self.employer_id
         }
+

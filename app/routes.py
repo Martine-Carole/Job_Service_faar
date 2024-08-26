@@ -11,6 +11,7 @@ class JobList(Resource):
         jobs = JobPost.query.all()
         return jsonify([job.to_dict() for job in jobs])
 
+
     def post(self):
         data = request.json
         new_job = JobPost(**data)
